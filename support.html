@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Treadmill Day Support</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #e8590c;
+    --rule: #e5e5ea;
+    --card: #f5f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111113;
+      --text: #f5f5f7;
+      --muted: #a1a1a6;
+      --accent: #ff8a4c;
+      --rule: #2c2c2e;
+      --card: #1c1c1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 56px; }
+  nav { font-size: 15px; margin-bottom: 28px; }
+  nav a { margin-right: 16px; }
+  a { color: var(--accent); }
+  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 21px; margin: 36px 0 12px; }
+  p, ul, ol { margin: 0 0 14px; }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .lead { color: var(--muted); margin-bottom: 24px; }
+  .card { background: var(--card); border-radius: 10px; padding: 16px 18px; margin-bottom: 8px; }
+  .card p:last-child, .card ul:last-child { margin-bottom: 0; }
+  details { border-top: 1px solid var(--rule); padding: 12px 0; }
+  details:last-of-type { border-bottom: 1px solid var(--rule); }
+  summary { cursor: pointer; font-weight: 600; }
+  details > :not(summary) { margin-top: 10px; }
+  details p:last-child, details ul:last-child, details ol:last-child { margin-bottom: 0; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a></nav>
+
+  <h1>Treadmill Day Support</h1>
+  <p class="lead">Treadmill Day reads the miles and time from a photo of your treadmill display and keeps a log of your runs. It needs an iPhone running iOS 17 or later.</p>
+
+  <h2>Contact us</h2>
+  <div class="card">
+    <p>Email <a href="mailto:haokai.yang@yangindustries.link?subject=Treadmill%20Day%20support">haokai.yang@yangindustries.link</a>.</p>
+    <p>To help us answer quickly, include your iPhone model, your iOS version, and what you were doing when the problem happened. If the app misread your treadmill, a photo of the display helps us a lot.</p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+  <details>
+    <summary>How do I log a run?</summary>
+    <p>There are two places to start, and both give you the same three choices:</p>
+    <ul>
+      <li><strong>Scan tab:</strong> tap Take Photo, Choose from Library, or Enter Manually.</li>
+      <li><strong>History tab:</strong> tap the + button at the top right.</li>
+    </ul>
+    <p>After a photo, check the miles and time the app read, fix anything that is wrong, and tap Save.</p>
+  </details>
+
+  <details>
+    <summary>The app read the wrong numbers. What can I do?</summary>
+    <p>You can always correct the numbers on the check screen before you save. To get better readings:</p>
+    <ul>
+      <li>Fill the frame with the display and hold your phone straight on, not at an angle.</li>
+      <li>Avoid glare and reflections on the screen.</li>
+      <li>Wait until the display shows both distance and time (not only speed or calories).</li>
+    </ul>
+    <p>Displays made of glowing segments, like those on many treadmills, are the hardest to read. If a photo keeps failing, use Enter Manually. If you email us a photo of your display, we can work on supporting it.</p>
+  </details>
+
+  <details>
+    <summary>Can I log a run I did earlier, or without a photo?</summary>
+    <p>Yes. Choose Enter Manually, type the miles and time, and set the date and time of the run.</p>
+  </details>
+
+  <details>
+    <summary>Does the app work in kilometers?</summary>
+    <p>If your display is labeled in kilometers, the app converts the distance to miles. Treadmill Day shows distances in miles.</p>
+  </details>
+
+  <details>
+    <summary>How do I fix or delete a saved run?</summary>
+    <p>In the History tab, swipe the run to the left to delete it. To correct a run, delete it and add it again.</p>
+  </details>
+
+  <details>
+    <summary>What does the chart in History show?</summary>
+    <p>It shows the last 14 days. The blue bars are the miles you ran each day (left axis, in miles). The orange line is your average pace for that day (right axis, in minutes per mile). A day without a run has no pace point.</p>
+  </details>
+
+  <details>
+    <summary>How do I export my runs?</summary>
+    <p>In the History tab, tap the share button at the top right. The app creates a CSV file with the date, miles, time, and pace of every run. You can open it in Numbers or Excel, send it by email or AirDrop, or save it to Files.</p>
+  </details>
+
+  <details>
+    <summary>How does iCloud sync work?</summary>
+    <p>When "Sync with iCloud" is on, your runs and their photos are saved to your private iCloud and appear on your other devices signed in to the same Apple ID. Open the Settings tab in the app to see whether sync is on and when it last ran.</p>
+  </details>
+
+  <details>
+    <summary>My runs do not show up on my other device.</summary>
+    <ol>
+      <li>Make sure both devices are signed in to iCloud with the same Apple ID, and that they have an internet connection.</li>
+      <li>On the iPhone, open Settings &gt; your name &gt; iCloud and check that Treadmill Day is not switched off.</li>
+      <li>In Treadmill Day, open the Settings tab and check that sync is on.</li>
+      <li>Leave the app open for a minute or two, then close and reopen it. Sync is not instant.</li>
+    </ol>
+    <p>If it still does not work, email us.</p>
+  </details>
+
+  <details>
+    <summary>How do I turn iCloud sync off?</summary>
+    <p>Open the Settings tab in the app and switch off "Sync with iCloud". The change applies the next time you open the app. Your runs stay on the device, and the copy in iCloud is not deleted. To remove it, go to Settings &gt; your name &gt; iCloud &gt; Manage Account Storage.</p>
+  </details>
+
+  <details>
+    <summary>The camera does not open.</summary>
+    <p>Open the iPhone's Settings app, find Treadmill Day, and turn on Camera. You can also choose a photo from your library or enter the run manually.</p>
+  </details>
+
+  <details>
+    <summary>How do I delete all my data?</summary>
+    <p>Delete the app to remove the data stored on your device. If you used iCloud sync, also remove the synced copy under Settings &gt; your name &gt; iCloud &gt; Manage Account Storage. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+  </details>
+
+  <footer>&copy; 2026 Yang Industries &middot; <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
